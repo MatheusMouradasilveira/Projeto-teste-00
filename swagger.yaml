@@ -1,0 +1,59 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: Catálogo de Imagens API
+  description: API para gerenciar um catálogo de imagens
+basePath: "/"
+tags:
+  - name: imagens
+    description: Operações relacionadas a imagens
+paths:
+  /imagens:
+    get:
+      tags:
+        - imagens
+      summary: Lista todas as imagens
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/Imagem"
+    /{id}:
+      get:
+        tags:
+          - imagens
+        summary: Obtém detalhes de uma imagem específica
+        parameters:
+          - in: path
+            name: id
+            description: ID da imagem
+            required: true
+            type: integer
+            format: int64
+        responses:
+          "200":
+            description: OK
+            schema:
+              $ref: "#/definitions/Imagem"
+          "404":
+            description: Imagem não encontrada
+definitions:
+  Imagem:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+      titulo:
+        type: string
+      descricao:
+        type: string
+      url:
+        type: string
+      autor:
+        type: string
+      dataCriacao:
+        type: string
+        format: date

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "titulo": "Pôr do Sol",
+    "descricao": "Uma linda paisagem de pôr do sol sobre o mar.",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Sunset_in_Manaus.jpg/640px-Sunset_in_Manaus.jpg",
+    "autor": "Autor Desconhecido",
+    "dataCriacao": "2024-04-08"
+  },
+  {
+    "id": 2,
+    "titulo": "Gato Fofo",
+    "descricao": "Um gato fofo miando.",
+    "url": "https://media.tenor.com/hzoSEl-Ut7oAAAAM/meow.gif",
+    "autor": "Fotógrafo Profissional",
+    "dataCriacao": "2024-04-07"
+  },
+  {
+    "id": 3,
+    "titulo": "Floresta Verdejante",
+    "descricao": "Uma exuberante floresta verde em um dia ensolarado.",
+    "url": "https://img.freepik.com/fotos-premium/vista-aerea-de-uma-floresta-verdejante-criada-com-ai-generativa_419341-58108.jpg",
+    "autor": "Natureza Fotografia",
+    "dataCriacao": "2024-04-06"
+  }
+]
